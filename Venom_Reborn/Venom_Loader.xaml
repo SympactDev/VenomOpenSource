@@ -1,0 +1,18 @@
+﻿<Window x:Name="Venom_Loader" x:Class="Venom_Loader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Venom_Loader"
+        mc:Ignorable="d"
+        Title="Venom_Loader" Height="278.873" Width="539.235" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="VenomLogo.png" AllowsTransparency="True" WindowStyle="None" Foreground="White">
+    <Window.Background>
+        <ImageBrush ImageSource="VenomLoader.png"/>
+    </Window.Background>
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="499,14,0,0" VerticalAlignment="Top" Width="21" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click"/>
+        <ProgressBar x:Name="ProgressBox" HorizontalAlignment="Left" Margin="37,202,0,24.2" Width="459" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black"/>
+        <Label x:Name="Status" Content="Loading..." HorizontalAlignment="Left" Margin="37,177,0,0" VerticalAlignment="Top" Height="25" Foreground="White" Width="483"/>
+
+    </Grid>
+</Window>

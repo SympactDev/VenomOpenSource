@@ -1,0 +1,47 @@
+﻿<Window x:Name="Venom_Hub" x:Class="Venom_Hub.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Venom_Hub"
+        mc:Ignorable="d"
+        Title="Venom_Hub" Height="395.674" Width="697.686" Icon="VenomLogo.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Foreground="White" MouseDown="Venom_Hub_MouseDown">
+    <Window.Background>
+        <ImageBrush ImageSource="VenomHub.png"/>
+    </Window.Background>
+    <Grid Margin="147,0,151,10">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="32,92,0,0" VerticalAlignment="Top" Width="113" Height="102" BorderBrush="#FF252525" Foreground="{x:Null}" Click="Button_Click_2" Style="{DynamicResource ListButton}">
+            <Button.Background>
+                <ImageBrush ImageSource="Icon's/Jailbreak.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="147,92,0,0" VerticalAlignment="Top" Width="113" Height="102" BorderBrush="#FF252525" Foreground="{x:Null}" Click="Button_Click_3" Style="{DynamicResource ListButton}">
+            <Button.Background>
+                <ImageBrush ImageSource="Icon's/Mad city.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="262,92,0,0" VerticalAlignment="Top" Width="113" Height="102" BorderBrush="#FF252525" Foreground="{x:Null}" Click="Button_Click_4" Style="{DynamicResource ListButton}">
+            <Button.Background>
+                <ImageBrush ImageSource="Icon's/PrisonLife.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="32,200,0,0" VerticalAlignment="Top" Width="113" Height="102" BorderBrush="#FF252525" Foreground="{x:Null}" Click="Button_Click_5" Style="{DynamicResource ListButton}">
+            <Button.Background>
+                <ImageBrush ImageSource="Icon's/Yield.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="147,200,0,0" VerticalAlignment="Top" Width="113" Height="102" BorderBrush="#FF252525" Foreground="{x:Null}" Click="Button_Click_6" Style="{DynamicResource ListButton}">
+            <Button.Background>
+                <ImageBrush ImageSource="Icon's/ESP.PNG"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="262,200,0,0" VerticalAlignment="Top" Width="113" Height="102" BorderBrush="#FF252525" Foreground="{x:Null}" Click="Button_Click_7" Style="{DynamicResource ListButton}">
+            <Button.Background>
+                <ImageBrush ImageSource="Icon's/DexV2.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="364,30,0,0" VerticalAlignment="Top" Width="26" Height="26" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click" Style="{DynamicResource RoundButton}"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="338,30,0,0" VerticalAlignment="Top" Width="26" Height="26" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_1" Style="{DynamicResource RoundButton}"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Name="Venom_Options" x:Class="Venom_Options.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Venom_Options"
+        mc:Ignorable="d"
+        Title="Venom_Options" Height="363.078" Width="611.67" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Icon="VenomLogo.png" MouseDown="Venom_Options_MouseDown" Closing="Venom_Options_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="VenomOptions.png"/>
+    </Window.Background>
+    <Grid Margin="138,0,137,0">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="297,13,0,0" VerticalAlignment="Top" Width="28" Height="29" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="277,13,0,0" VerticalAlignment="Top" Width="20" Height="29" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_1"/>
+        <CheckBox x:Name="AutoAttach" Content="Auto - Attach" HorizontalAlignment="Left" Margin="21,64,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="{x:Null}" Background="White" Checked="AutoAttach_Checked"/>
+        <CheckBox x:Name="FPS_Booster" Content="Fps - Booster" HorizontalAlignment="Left" Margin="21,79,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="{x:Null}" Background="White" Checked="FPS_Booster_Checked"/>
+        <CheckBox x:Name="AutoLaunch" Content="Auto - Launch" HorizontalAlignment="Left" Margin="21,94,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="{x:Null}" Background="White" Checked="AutoLaunch_Checked"/>
+        <CheckBox x:Name="AlwaysOnTop" Content="Top - Most" HorizontalAlignment="Left" Margin="21,109,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="{x:Null}" Background="White" Checked="AlwaysOnTop_Checked"/>
+        <CheckBox x:Name="KillRBLX" Content="Kill - Roblox" HorizontalAlignment="Left" Margin="21,124,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="{x:Null}" Background="White" Checked="CheckBox_Checked"/>
+
+    </Grid>
+</Window>

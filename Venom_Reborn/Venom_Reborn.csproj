@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06D95B0F-5CAF-4A7D-A0B7-8B0CE8A19754}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Venom_Reborn</RootNamespace>
+    <AssemblyName>Venom</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>VenomLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.AvalonEdit, Version=6.0.1.278, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
+      <HintPath>..\packages\AvalonEdit.6.0.1\lib\net45\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="VisioForge.Controls, Version=12.0.62.0, Culture=neutral, PublicKeyToken=5873e863f1bcda5d, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.62\lib\net45\VisioForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Controls.UI, Version=12.0.62.0, Culture=neutral, PublicKeyToken=eafa6bd21aa991fd, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.62\lib\net45\VisioForge.Controls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Controls.UI.Dialogs, Version=12.0.62.0, Culture=neutral, PublicKeyToken=3d84672df68c33ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.62\lib\net45\VisioForge.Controls.UI.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.MediaFramework, Version=12.0.62.0, Culture=neutral, PublicKeyToken=14e66dd726c53f11, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.62\lib\net45\VisioForge.MediaFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Shared, Version=12.0.62.0, Culture=neutral, PublicKeyToken=4cb7f6778cad43a2, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.62\lib\net45\VisioForge.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Tools, Version=12.0.62.0, Culture=neutral, PublicKeyToken=33c6ded9724deec2, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.62\lib\net45\VisioForge.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="VisioForge.Types, Version=12.0.62.0, Culture=neutral, PublicKeyToken=722de1c1c0a7f49e, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisioForge.DotNet.Core.TRIAL.12.0.62\lib\net45\VisioForge.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Data\data.cs" />
+    <Compile Include="ScriptContextMenu.xaml.cs">
+      <DependentUpon>ScriptContextMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Venom_Register.xaml.cs">
+      <DependentUpon>Venom_Register.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ScriptContextMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Venom_Hub.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Venom_Loader.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Venom_Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Venom_Options.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Venom_Reborn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="API.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Server.cs" />
+    <Compile Include="Execution\VenomInteract.cs" />
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Venom_Hub.xaml.cs">
+      <DependentUpon>Venom_Hub.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Injection\Injector.cs" />
+    <Compile Include="Injection\VenomFunctions.cs" />
+    <Compile Include="Venom_Loader.xaml.cs">
+      <DependentUpon>Venom_Loader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Venom_Login.xaml.cs">
+      <DependentUpon>Venom_Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Venom_Options.xaml.cs">
+      <DependentUpon>Venom_Options.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Venom_Reborn.xaml.cs">
+      <DependentUpon>Venom_Reborn.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Venom_Register.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VenomUinew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VenomLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="222.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Options\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VenomOptions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VenomHub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hub\VenomHub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon%27s\DexV2.png" />
+    <Resource Include="Icon%27s\ESP.PNG" />
+    <Resource Include="Icon%27s\Jailbreak.jpg" />
+    <Resource Include="Icon%27s\Mad city.jpg" />
+    <Resource Include="Icon%27s\PrisonLife.jpg" />
+    <Resource Include="Icon%27s\Rounded.png" />
+    <Resource Include="Icon%27s\Yield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VenomLoader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VenomLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VenomRegister.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VenomLogo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.6.2.4\build\Fody.targets" Condition="Exists('..\packages\Fody.6.2.4\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.6.2.4\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.2.4\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props'))" />
+  </Target>
+</Project>
